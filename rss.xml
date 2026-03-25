@@ -6,7 +6,7 @@
     <title>Mein Testpodcast</title>
     <link>https://www.pkm4free.com</link>
     <description>Coole Seite yala yala</description>
-    <email>my@gmail.com</email>
+    <email>mgstreams01@gmail.com</email>
     <language>de-de</language>
 
     <itunes:author>Mein Testpodcast | Business</itunes:author>
@@ -15,9 +15,9 @@
 
      <itunes:owner>
        <itunes:name>Owner</itunes:name>
-       <itunes:email>my@gmail.com</itunes:email>
+       <itunes:email>mgstreams01@gmail.com</itunes:email>
      </itunes:owner>
-     <itunes:email>my@gmail.com</itunes:email>
+     <itunes:email>mgstreams01@gmail.com</itunes:email>
 
     <itunes:image href="https://www.pkm4free.com/podcast-cover.jpg" />
     <atom:link href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/rss.xml" rel="self" type="application/rss+xml" />
