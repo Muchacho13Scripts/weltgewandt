@@ -1,3 +1,27 @@
-ok
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mein Testpodcast</title>
+    <link>https://pkm4free.com</link>
+    <descriptionCoole Seite yala yala</description>
+    <language>de</language>
+    
+    <!-- iTunes-specific metadata -->
+    <itunes:author>Mein Testpodcast | Business</itunes:author>
+    <itunes:summary>yes, that is a good summary</itunes:summary>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name>Owner</itunes:name>
+      <itunes:email>my@gmail.com</itunes:email>
+    </itunes:owner>
+    
+    <!-- Fixed the image URL -->
+    <itunes:image href="https://acosta1991.github.io/newsletter2podcast/01/news2podcast_logo_1400x1400.png" />
 
-ok
+    <!-- Atom self-reference -->
+    <atom:link href="https://acosta1991.github.io/newsletter2podcast/rss_01.xml" rel="self" type="application/rss+xml" />
+
+</channel>
+</rss>
