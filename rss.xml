@@ -4,7 +4,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mein Testpodcast</title>
-    <link>https://pkm4free.com</link>
+    <link>https://www.pkm4free.com</link>
     <descriptionCoole Seite yala yala</description>
     <language>de</language>
     
@@ -18,10 +18,10 @@
     </itunes:owner>
     
     <!-- Fixed the image URL -->
-    <itunes:image href="https://acosta1991.github.io/newsletter2podcast/01/news2podcast_logo_1400x1400.png" />
+    <itunes:image href="" />
 
     <!-- Atom self-reference -->
-    <atom:link href="https://acosta1991.github.io/newsletter2podcast/rss_01.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.pkm4free.com" rel="self" type="application/rss+xml" />
 
 </channel>
 </rss>
