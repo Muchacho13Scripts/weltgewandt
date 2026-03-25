@@ -12,10 +12,11 @@
     <itunes:summary>yes, that is a good summary</itunes:summary>
     <itunes:explicit>no</itunes:explicit>
 
-    <itunes:owner>
+     <itunes:owner>
       <itunes:name>Owner</itunes:name>
       <itunes:email>my@gmail.com</itunes:email>
-    </itunes:owner>
+     </itunes:owner>
+      <itunes:email>my@gmail.com</itunes:email>
 
     <itunes:image href="https://www.pkm4free.com/podcast-cover.jpg" />
     <atom:link href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/rss.xml" rel="self" type="application/rss+xml" />
