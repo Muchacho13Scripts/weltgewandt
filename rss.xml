@@ -3,21 +3,23 @@
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mein Testpodcast</title>
-    <link>https://www.pkm4free.com</link>
-    <description>Coole Seite yala yala</description>
+    <title>Weltgewandt - Erdig. Echt. Unterwegs.</title>
+    <link>https://www.olafwirths.de/</link>
+    <description>Weltgewandt – mit Olaf Wirths ist ein Podcast über Reisen, Begegnungen, Kultur, Kulinarik und das bewusste Unterwegssein.
+          Olaf Wirths erzählt von Weltreise, Familienabenteuern, besonderen Orten, echten Menschen und den Geschichten, die unterwegs entstehen – persönlich, ehrlich und mit offenem Blick auf die Welt.</description>
     <language>de-de</language>
 
-    <itunes:author>Mein Testpodcast | Business</itunes:author>
-    <itunes:summary>yes, that is a good summary</itunes:summary>
+    <itunes:author>Weltgewandt - Erdig. Echt. Unterwegs.</itunes:author>
+    <itunes:summary>Weltgewandt – mit Olaf Wirths ist ein Podcast über Reisen, Begegnungen, Kultur, Kulinarik und das bewusste Unterwegssein.
+          Olaf Wirths erzählt von Weltreise, Familienabenteuern, besonderen Orten, echten Menschen und den Geschichten, die unterwegs entstehen – persönlich, ehrlich und mit offenem Blick auf die Welt.</itunes:summary>
     <itunes:explicit>no</itunes:explicit>
 
      <itunes:owner>
-       <itunes:name>Owner</itunes:name>
-       <itunes:email>mgstreams01@gmail.com</itunes:email>
+       <itunes:name>Olaf Wirths</itunes:name>
+       <itunes:email>olafwirths@posteo.de</itunes:email>
      </itunes:owner>
 
-    <itunes:image href="https://www.pkm4free.com/podcast-cover.jpg" />
+    <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/cover.jpg" />
     <atom:link href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/rss.xml" rel="self" type="application/rss+xml" />
 
      <item>
