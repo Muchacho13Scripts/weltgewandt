@@ -3,20 +3,18 @@
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Weltgewandt - Erdig. Echt. Unterwegs.</title>
-    <link>https://www.olafwirths.de/</link>
-    <description>Weltgewandt – mit Olaf Wirths ist ein Podcast über Reisen, Begegnungen, Kultur, Kulinarik und das bewusste Unterwegssein.
-          Olaf Wirths erzählt von Weltreise, Familienabenteuern, besonderen Orten, echten Menschen und den Geschichten, die unterwegs entstehen – persönlich, ehrlich und mit offenem Blick auf die Welt.</description>
+    <title>test</title>
+    <link>https://www.nonono.de/</link>
+    <description>blabla</description>
     <language>de-de</language>
 
-    <itunes:author>Weltgewandt - Erdig. Echt. Unterwegs.</itunes:author>
-    <itunes:summary>Weltgewandt – mit Olaf Wirths ist ein Podcast über Reisen, Begegnungen, Kultur, Kulinarik und das bewusste Unterwegssein.
-          Olaf Wirths erzählt von Weltreise, Familienabenteuern, besonderen Orten, echten Menschen und den Geschichten, die unterwegs entstehen – persönlich, ehrlich und mit offenem Blick auf die Welt.</itunes:summary>
+    <itunes:author>test</itunes:author>
+    <itunes:summary>neinein</itunes:summary>
     <itunes:explicit>no</itunes:explicit>
 
      <itunes:owner>
-       <itunes:name>Olaf Wirths</itunes:name>
-       <itunes:email>olafwirths@posteo.de</itunes:email>
+       <itunes:name>ich</itunes:name>
+       <itunes:email>ich@posteo.de</itunes:email>
      </itunes:owner>
 
     <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/cover.jpg" />
@@ -24,9 +22,9 @@
 
     <item>
        <title>Im Dazwischen</title>
-       <description><![CDATA[🌍 Weltgewandt – mit Olaf Wirths<br/>Erdig. Echt. Unterwegs.<br/><br/>In der ersten Folge „Im Dazwischen“ nimmt Olaf Wirths dich mit auf eine Reise, die nicht an einen Ort gebunden ist. Es geht nicht ums Ankommen, sondern um das Dazwischen – die Momente, die uns berühren: Begegnungen in Sri Lanka, im Himalaya oder in Peru, kleine Entdeckungen im Alltag, Handwerk, Bierkultur – und das bewusste Innehalten in einer Welt, die rennt.<br/>Olaf erzählt ehrlich von seinem eigenen Weg, von Reisen mit Familie, von Offenheit, Neugier und der Freude am Jetzt. Authentische Geschichten, echte Begegnungen, intensive Eindrücke – ohne Planung, ohne Ziel, einfach unterwegs.<br/>🎧 Hinhören lohnt sich: Für alle, die die Welt nicht nur sehen, sondern ihr begegnen wollen.<br/><br/>Für Soziale Medien: 🌍 Weltgewandt – mit Olaf Wirths<br/>Erdig. Echt. Unterwegs.<br/>In der ersten Folge „Im Dazwischen“ geht es nicht ums Ankommen, sondern um Momente, die berühren: kleine Begegnungen, echte Geschichten, bewusstes Innehalten und das Abenteuer, offen durch die Welt zu gehen.<br/>🎧 Hinhören & mitreisen – ohne Ziel, einfach unterwegs.<br/><br/><br/>HIER KOMMT SOCIAL MEDIA]]></description>
+       <description>testdescription</description>
        <pubDate>Wed, 01 Apr 2026 07:00:00 GMT</pubDate>
-       <enclosure url="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/audio/recAwAx9spBPojcTd.mp3" length="1249296" type="audio/mpeg" />
+       <enclosure url="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/audio/recAwAx9spBPojcTdsdf.mp3" length="1249296" type="audio/mpeg" />
        <guid isPermaLink="false">recAwAx9spBPojcTd</guid>
     </item>
   </channel>
