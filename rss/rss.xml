@@ -17,7 +17,7 @@
        <itunes:email>ich@posteo.de</itunes:email>
      </itunes:owner>
 
-    <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/cover.jpg" />
+    <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/coverino.jpg" />
     <atom:link href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/refs/heads/main/rss/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
