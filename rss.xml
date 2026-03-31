@@ -21,6 +21,5 @@
 
     <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/cover.jpg" />
     <atom:link href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/refs/heads/main/rss.xml" rel="self" type="application/rss+xml" />
-
   </channel>
 </rss>
