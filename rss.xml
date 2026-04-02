@@ -13,11 +13,15 @@
     <itunes:summary>Weltgewandt – mit Olaf Wirths ist ein Podcast über Reisen, Begegnungen, Kultur, Kulinarik und das bewusste Unterwegssein.
           Olaf Wirths erzählt von Weltreise, Familienabenteuern, besonderen Orten, echten Menschen und den Geschichten, die unterwegs entstehen – persönlich, ehrlich und mit offenem Blick auf die Welt.</itunes:summary>
     <itunes:explicit>no</itunes:explicit>
-
-     <itunes:owner>
+       
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Places &amp; Travel"/>
+    </itunes:category>
+       
+    <itunes:owner>
        <itunes:name>Olaf Wirths</itunes:name>
        <itunes:email>olafwirths@posteo.de</itunes:email>
-     </itunes:owner>
+    </itunes:owner>
 
     <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/cover.jpg" />
     <atom:link href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/refs/heads/main/rss.xml" rel="self" type="application/rss+xml" />
