@@ -1,7 +1,7 @@
-name: Upload Large File
+name: Upload MP3 to Folder
 on:
   repository_dispatch:
-    types: [upload_large_file]
+    types: [upload_mp3]
 
 jobs:
   upload:
@@ -10,13 +10,21 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Download file
-        # Lädt die URL herunter, die von Make.com übergeben wird
-        run: curl -L "${{ github.event.client_payload.file_url }}" -o "deine_datei.zip"
+
+      - name: Download and Place File
+        run: |
+          # Erstellt den Ordner (z.B. audio), falls er noch nicht existiert
+          mkdir -p "${{ github.event.client_payload.folder }}"
+          
+          # Lädt die Datei direkt in den Ordner mit dem gewünschten Namen
+          curl -L "${{ github.event.client_payload.file_url }}" -o "${{ github.event.client_payload.folder }}/${{ github.event.client_payload.filename }}"
+
       - name: Commit and push
         run: |
           git config user.name "GitHub Action API"
           git config user.email "action@github.com"
-          git add deine_datei.zip
-          git commit -m "Upload via Make.com and GitHub Action"
-          git push
+          git add .
+          # Dynamische Commit-Message mit dem Dateinamen
+          git commit -m "Audio Upload: ${{ github.event.client_payload.filename }}"
+          git pull --rebase origin main
+          git push origin main
