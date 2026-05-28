@@ -13,18 +13,28 @@ jobs:
 
       - name: Download and Place File
         run: |
-          # Erstellt den Ordner (z.B. audio), falls er noch nicht existiert
+          # Erstellt den Ordner, falls er noch nicht existiert
           mkdir -p "${{ github.event.client_payload.folder }}"
           
-          # Lädt die Datei direkt in den Ordner mit dem gewünschten Namen
+          # Lädt die Datei lokal herunter. 
+          # Ist sie schon da, wird sie lokal einfach überschrieben.
           curl -L "${{ github.event.client_payload.file_url }}" -o "${{ github.event.client_payload.folder }}/${{ github.event.client_payload.filename }}"
 
       - name: Commit and push
         run: |
           git config user.name "GitHub Action API"
           git config user.email "action@github.com"
-          git add .
-          # Dynamische Commit-Message mit dem Dateinamen
-          git commit -m "Audio Upload: ${{ github.event.client_payload.filename }}"
-          git pull --rebase origin main
-          git push origin main
+          
+          # Fügt spezifisch die heruntergeladene Datei zum Staging hinzu
+          git add "${{ github.event.client_payload.folder }}/${{ github.event.client_payload.filename }}"
+          
+          # Prüft mit --porcelain, ob Git Änderungen (neue oder veränderte Dateien) erkannt hat
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Änderungen oder neue Datei erkannt. Führe Commit und Push aus..."
+            git commit -m "Audio Upload: ${{ github.event.client_payload.filename }}"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "Die heruntergeladene Datei ist exakt identisch mit der bereits im Repo vorhandenen."
+            echo "Es passiert nichts weiter, Workflow erfolgreich beendet."
+          fi
