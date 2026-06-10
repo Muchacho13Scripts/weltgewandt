@@ -1,0 +1,46 @@
+name: Delete MP3 from Folder
+on:
+  repository_dispatch:
+    types: [delete_mp3]
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Delete File
+        run: |
+          TARGET_FILE="${{ github.event.client_payload.folder }}/${{ github.event.client_payload.filename }}"
+          
+          # Prüfen, ob die Datei existiert, und gezielt löschen
+          if [ -f "$TARGET_FILE" ]; then
+            echo "Datei gefunden. Lösche: $TARGET_FILE"
+            rm "$TARGET_FILE"
+          else
+            echo "Datei existiert nicht im Repository. Überspringe Löschvorgang."
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Action API"
+          git config user.email "action@github.com"
+          
+          # Nur die spezifische Löschung für Git vormerken
+          TARGET_FILE="${{ github.event.client_payload.folder }}/${{ github.event.client_payload.filename }}"
+          if [ -f "$TARGET_FILE" ] || [ -n "$(git status --porcelain "$TARGET_FILE")" ]; then
+            git rm --cached "$TARGET_FILE" 2>/dev/null || git add "$TARGET_FILE"
+          fi
+          
+          # Prüfen, ob eine Änderung erkannt wurde
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Löschung erkannt. Führe Commit und Push aus..."
+            git commit -m "Audio Delete: ${{ github.event.client_payload.filename }}"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "Keine Änderungen festgestellt (Datei war nicht vorhanden)."
+            echo "Workflow erfolgreich beendet."
+          fi
