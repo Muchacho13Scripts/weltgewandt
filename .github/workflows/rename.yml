@@ -1,0 +1,50 @@
+name: Rename MP3 in Folder
+on:
+  repository_dispatch:
+    types: [rename_mp3]
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rename File
+        run: |
+          FOLDER="${{ github.event.client_payload.folder }}"
+          OLD_FILE="$FOLDER/${{ github.event.client_payload.old_filename }}"
+          NEW_FILE="$FOLDER/${{ github.event.client_payload.new_filename }}"
+          
+          # Prüfen, ob die Ursprungsdatei existiert
+          if [ -f "$OLD_FILE" ]; then
+            echo "Datei gefunden. Benenne um von $OLD_FILE zu $NEW_FILE"
+            mv "$OLD_FILE" "$NEW_FILE"
+          else
+            echo "Fehler: Die Datei $OLD_FILE wurde nicht gefunden!"
+            exit 1
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Action API"
+          git config user.email "action@github.com"
+          
+          FOLDER="${{ github.event.client_payload.folder }}"
+          OLD_FILE="$FOLDER/${{ github.event.client_payload.old_filename }}"
+          NEW_FILE="$FOLDER/${{ github.event.client_payload.new_filename }}"
+          
+          # Dem Git-Staging die gelöschte (alte) und die neue Datei hinzufügen
+          git rm --cached "$OLD_FILE" 2>/dev/null || true
+          git add "$NEW_FILE"
+          
+          # Prüfen, ob Git die Änderung registriert hat
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Umbenennung erkannt. Führe Commit und Push aus..."
+            git commit -m "Audio Rename: ${{ github.event.client_payload.old_filename }} zu ${{ github.event.client_payload.new_filename }}"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "Keine Änderungen für Git erkannt."
+          fi
