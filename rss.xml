@@ -53,5 +53,14 @@
        <enclosure url="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/audio/recTKgIRYIgVB1ePR.mp3" length="" type="audio/mpeg" />
        <guid isPermaLink="false">recTKgIRYIgVB1ePR</guid>
     </item>
+
+    <item>
+       <title>Bier, Begegnung und Weltkultur</title>
+       <description><![CDATA[<p></p><hr /><br /><br /><strong>GÄSTE</strong><br /><br /><p>Markus Raupach - Markus lebt in Bamberg. Einer Stadt, die weltweit fast schon als Synonym für Bierkultur gilt. Kaum irgendwo sonst ist Brautradition so präsent wie dort. Aber Markus ist weit mehr als nur Biersommelier. Er ist Autor. Moderator. Juror bei internationalen Bierwettbewerben. Podcaster. Referent. Und vor allem jemand, der seit vielen Jahren weltweit unterwegs ist, um Bierkulturen kennenzulernen und sichtbar zu machen.</p><hr /><br /><br /><strong>SOCIAL MEDIA</strong><br /><br />👉<a href="https://olafwirths.de/">Meine Homepage</a><br />👉<a href="https://www.instagram.com/weltgewandtolafwirths/">Instagram - Weltgewandt</a><br />👉<a href="https://www.facebook.com/people/Olaf-Wirths/61574627027621/">Facebook - Olaf Wirths</a><br />👉<a href="https://www.facebook.com/people/Weltgewandt-mit-Olaf-Wirths/61585560285241/">Facebook - Weltgewandt</a>]]></description>
+       <pubDate>Wed, 01 Jul 2026 07:00:00 GMT</pubDate>
+       <itunes:image href="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/refs/heads/main/cover.jpg" />
+       <enclosure url="https://raw.githubusercontent.com/Muchacho13Scripts/weltgewandt/main/audio/rec2Bi0o14MDDLCVH.mp3" length="" type="audio/mpeg" />
+       <guid isPermaLink="false">rec2Bi0o14MDDLCVH</guid>
+    </item>
   </channel>
 </rss>
